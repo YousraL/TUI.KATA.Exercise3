@@ -20,7 +20,9 @@ namespace TUI.KATA.Exercise3.Services
         {
             try
             {
-                if(!string.Equals(Path.GetExtension(filePath), ".txt"))
+                if(!string.Equals(Path.GetExtension(filePath), ".txt")
+                    && !string.Equals(Path.GetExtension(filePath), ".xml")
+                    )
                 {
                     return "Error extension";
                 }

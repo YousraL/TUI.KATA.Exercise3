@@ -7,7 +7,7 @@ using System.Reflection;
 namespace TUI.KATA.Exercise3.Tests
 {
     [TestClass]
-    public class UnitTest1
+    public class TextFileTests
     {
         [TestMethod]
         public void ReadingFileTest_Success()
