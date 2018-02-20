@@ -10,26 +10,56 @@ namespace TUI.KATA.Exercise3.Services
     public class FileServices : IFileServices
     {
         private readonly string filePath;
+        private readonly bool isEncrypted;
         
 
         public FileServices(string filePath)
         {
             this.filePath = filePath;
+            this.isEncrypted = false;
         }
+
+        public FileServices(string filePath, bool isEncrypted)
+        {
+            this.filePath = filePath;
+            this.isEncrypted = isEncrypted;
+        }
+
         public string ReadFile()
         {
             try
             {
-                if(!string.Equals(Path.GetExtension(filePath), ".txt")
-                    && !string.Equals(Path.GetExtension(filePath), ".xml")
-                    )
+                if (!isEncrypted)
                 {
-                    return "Error extension";
+                    if (!string.Equals(Path.GetExtension(filePath), ".txt")
+                        && !string.Equals(Path.GetExtension(filePath), ".xml")
+                        )
+                    {
+                        return "Error extension";
+                    }
+                    using (StreamReader reader = new StreamReader(new FileStream(filePath, FileMode.Open), new UTF8Encoding()))
+                    {
+
+                        return reader.ReadToEnd();
+                    }
                 }
-                using (StreamReader reader = new StreamReader(new FileStream(filePath, FileMode.Open), new UTF8Encoding()))
+                else
                 {
-                    
-                    return reader.ReadToEnd();
+                    //prérequis : reverse algorithm
+                    if (!string.Equals(Path.GetExtension(filePath), ".txt"))
+                    {
+                        return "Error extension";
+                    }
+                    using (StreamReader reader = new StreamReader(new FileStream(filePath, FileMode.Open), new UTF8Encoding()))
+                    {
+
+                        var content = reader.ReadToEnd();
+                        if (!string.IsNullOrEmpty(content))
+                        {
+                            return new string(content.Reverse().ToArray());
+                        }
+                        return string.Empty;
+                    }
                 }
             }catch(Exception ex)
             {
@@ -37,5 +67,6 @@ namespace TUI.KATA.Exercise3.Services
             }
 
         }
+
     }
 }
