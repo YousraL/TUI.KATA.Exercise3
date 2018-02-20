@@ -1,0 +1,9 @@
+C:\Users\yousra.laribi\OneDrive\Arolla\TUI\TUI.KATA.Exercise3\TUI.KATA.Exercise3\bin\Debug\TUI.KATA.Exercise3.exe.config
+C:\Users\yousra.laribi\OneDrive\Arolla\TUI\TUI.KATA.Exercise3\TUI.KATA.Exercise3\bin\Debug\TUI.KATA.Exercise3.exe
+C:\Users\yousra.laribi\OneDrive\Arolla\TUI\TUI.KATA.Exercise3\TUI.KATA.Exercise3\bin\Debug\TUI.KATA.Exercise3.pdb
+C:\Users\yousra.laribi\OneDrive\Arolla\TUI\TUI.KATA.Exercise3\TUI.KATA.Exercise3\obj\Debug\TUI.KATA.Exercise3.csprojResolveAssemblyReference.cache
+C:\Users\yousra.laribi\OneDrive\Arolla\TUI\TUI.KATA.Exercise3\TUI.KATA.Exercise3\obj\Debug\TUI.KATA.Exercise3.Form1.resources
+C:\Users\yousra.laribi\OneDrive\Arolla\TUI\TUI.KATA.Exercise3\TUI.KATA.Exercise3\obj\Debug\TUI.KATA.Exercise3.Properties.Resources.resources
+C:\Users\yousra.laribi\OneDrive\Arolla\TUI\TUI.KATA.Exercise3\TUI.KATA.Exercise3\obj\Debug\TUI.KATA.Exercise3.csproj.GenerateResource.Cache
+C:\Users\yousra.laribi\OneDrive\Arolla\TUI\TUI.KATA.Exercise3\TUI.KATA.Exercise3\obj\Debug\TUI.KATA.Exercise3.exe
+C:\Users\yousra.laribi\OneDrive\Arolla\TUI\TUI.KATA.Exercise3\TUI.KATA.Exercise3\obj\Debug\TUI.KATA.Exercise3.pdb
